@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | Vonvi Studio Perú</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="JAVASCRIPT/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="logo">
+
+                <a href="index.html">
+
+                    <img src="img/logo.png" alt="Vonvi Studio">
+
+                </a>
+
+            </div>
+
+            <nav id="menu">
+
+                <ul>
+
+                    <li><a href="index.html">Inicio</a></li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                    <li><a href="productos.html" >Productos</a></li>
+
+                    <li><a href="servicios.html">Servicios</a></li>
+
+                    <li><a href="videos.html" class="activo">Videos</a></li>
+
+                    <li><a href="contacto.html">Contacto</a></li>
+
+                </ul>
+
+            </nav>
+            <a href="#" class="btn-header btn-favoritos" onclick="toggleFavoritos(); return false;">
+
+                <span class="icono-favorito">🤍</span>
+
+                <span class="texto-favorito">Mis Favoritos</span>
+
+            </a>
+
+            <a href="contacto.html" class="btn-header">
+
+                Cotiza Aquí
+
+            </a>
+
+            <div class="menu-movil" onclick="abrirMenu()">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </div>
+
+
+</header>
+
+<section class="hero-pagina">
+
+    <div class="contenedor">
+
+        <h1>Galería de Videos</h1>
+
+        <p>
+            Conoce algunos de nuestros trabajos, procesos de producción y proyectos personalizados.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="videos">
+
+    <div class="contenedor">
+
+        <div class="titulo-seccion">
+
+            <span>Videos</span>
+
+            <h2>Nuestros Trabajos</h2>
+
+            <p>
+                Descubre cómo elaboramos cada uno de nuestros productos personalizados.
+            </p>
+
+        </div>
+
+        <div class="grid-videos">
+
+            <div class="video-card">
+
+                <video controls>
+
+                    <source src="videos/video1.mp4" type="video/mp4">
+
+                </video>
+
+                <h3>Sublimación y Estampados</h3>
+
+            </div>
+
+            <div class="video-card">
+
+                <video controls>
+
+                    <source src="videos/video2.mp4" type="video/mp4">
+
+                </video>
+
+                <h3>Impresión DTF</h3>
+
+            </div>
+
+            <div class="video-card">
+
+                <video controls>
+
+                    <source src="videos/video3.mp4" type="video/mp4">
+
+                </video>
+
+                <h3>Gift Box Personalizado</h3>
+
+            </div>
+
+            <div class="video-card">
+
+                <video controls>
+
+                    <source src="videos/video4.mp4" type="video/mp4">
+
+                </video>
+
+                <h3>Merchandising Corporativo</h3>
+
+            </div>
+
+            <div class="video-card">
+
+                <video controls>
+
+                    <source src="videos/video5.mp4" type="video/mp4">
+
+                </video>
+
+                <h3>Productos Terminados</h3>
+
+            </div>
+
+            <div class="video-card">
+
+                <video controls>
+
+                    <source src="videos/video6.mp4" type="video/mp4">
+
+                </video>
+
+                <h3>Entrega de Pedidos</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="galeria">
+
+    <div class="contenedor">
+
+        <div class="titulo-seccion">
+
+            <span>Galería</span>
+
+            <h2>Algunos de nuestros trabajos</h2>
+
+        </div>
+
+        <div class="grid-galeria">
+
+            <img src="img/galeria1.jpg" alt="Trabajo">
+
+            <img src="img/galeria2.jpg" alt="Trabajo">
+
+            <img src="img/galeria3.jpg" alt="Trabajo">
+
+            <img src="img/galeria4.jpg" alt="Trabajo">
+
+            <img src="img/galeria5.jpg" alt="Trabajo">
+
+            <img src="img/galeria6.jpg" alt="Trabajo">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta">
+
+    <div class="contenedor">
+
+        <div class="cta-contenido">
+
+            <h2>¿Te gustó nuestro trabajo?</h2>
+
+            <p>
+
+                Ponte en contacto con nosotros y personalizaremos tus productos con el diseño que desees.
+
+            </p>
+
+            <a href="contacto.html" class="btn-principal">
+
+                Solicitar Cotización
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="contenedor">
+
+        <div class="footer-grid">
+
+            <div class="footer-col">
+
+                <img src="img/logo.png" alt="Vonvi Studio" class="logo-footer">
+
+                <p>
+                    En Vonvi Studio Perú transformamos ideas en productos personalizados de alta calidad para empresas, emprendimientos y ocasiones especiales.
+                </p>
+
+                <div class="redes">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Enlaces</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Inicio</a></li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                    <li><a href="productos.html">Productos</a></li>
+
+                    <li><a href="servicios.html">Servicios</a></li>
+
+                    <li><a href="videos.html">Videos</a></li>
+
+                    <li><a href="contacto.html">Contacto</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Nuestros Servicios</h3>
+
+                <ul>
+
+                    <li>Merchandising</li>
+
+                    <li>Papelería Personalizada</li>
+
+                    <li>Impresión Digital</li>
+
+                    <li>Diseño Gráfico</li>
+
+                    <li>Publicidad</li>
+
+                    <li>Regalos Corporativos</li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Contáctanos</h3>
+
+                <p><i class="fas fa-location-dot"></i> Chorrillos ref. Parque Belen- Lima, Perú</p>
+
+                <p><i class="fas fa-phone"></i> +51 907 100 820</p>
+
+                <p><i class="fas fa-envelope"></i> vonvistudioperu@gmail.com</p>
+
+                <p><i class="fas fa-clock"></i> Lun - Sáb | 8:00 am - 6:00 pm</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="anio"></span> Vonvi Studio Perú | Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<a href="https://wa.me/51907100820" class="whatsapp" target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<div id="btnTop">
+
+    <i class="fas fa-chevron-up"></i>
+
+</div>
+   <div id="panelFavoritos">
+
+    <div class="headerFavoritos">
+
+        <h3>🤍  Mis Favoritos</h3>
+
+        <button onclick="cerrarFavoritos()">
+            ✖
+        </button>
+
+    </div>
+
+    <div id="contenidoFavoritos">
+
+            <ul id="listaFavoritos">
+
+        </ul>
+
+    </div>
+
+</div>
+<div id="mensajeFavorito">
+    🤍 Producto agregado a tus favoritos
+</div>
+
+</body>
+
+</html>

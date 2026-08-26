@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | Vonvi Studio Perú</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="JAVASCRIPT/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="logo">
+
+                <a href="index.html">
+
+                    <img src="img/logo.png" alt="Vonvi Studio">
+
+                </a>
+
+            </div>
+
+            <nav id="menu">
+
+                <ul>
+
+                    <li><a href="index.html">Inicio</a></li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                    <li><a href="productos.html" class="activo">Productos</a></li>
+
+                    <li><a href="servicios.html">Servicios</a></li>
+
+                    <li><a href="videos.html">Videos</a></li>
+
+                    <li><a href="contacto.html">Contacto</a></li>
+
+                </ul>
+
+            </nav>
+            <a href="#" class="btn-header btn-favoritos" onclick="toggleFavoritos(); return false;">
+
+                <span class="icono-favorito">🤍</span>
+
+                <span class="texto-favorito">Mis Favoritos</span>
+
+            </a>
+
+            <a href="contacto.html" class="btn-header">
+
+                Cotiza Aquí
+
+            </a>
+
+            <div class="menu-movil" onclick="abrirMenu()">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+    <section class="hero-pagina">
+
+        <div class="contenedor">
+
+            <h1>Explora nuestro catálogo</h1>
+
+            <p class="cata">
+                Contamos con una gran variedad de productos promocionales y personalizados para todo tipo de
+                ocasión.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="productos">
+
+        <div class="contenedor">
+
+
+            <div class="grid-productos">
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+
+                        <img src="img/tazas.jpg" alt="Taza Personalizada">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Taza Personalizada</h3>
+
+                        <p>
+                            Ideal para regalos, empresas y eventos.
+                        </p>
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Taza Personalizada')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+
+                        <img src="img/polos.jpg" alt="Polo Personalizado">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Polo DTF</h3>
+
+                        <p>
+                            Impresión textil de alta calidad.
+                        </p>
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Polo DTF')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+
+                        <img src="img/stickers.jpg" alt="Sticker">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Sticker Troquelado</h3>
+
+                        <p>
+                            Vinil adhesivo resistente al agua.
+                        </p>
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Sticker Troquelado')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+
+                        <img src="img/llaveros.jpg" alt="Llavero">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Llavero Acrílico</h3>
+
+                        <p>
+                            Personalizado con impresión UV.
+                        </p>
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Llavero Acrílico')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+
+                        <img src="img/agendas.jpg" alt="Agenda">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Agenda Personalizada</h3>
+
+                        <p>
+                            Diseñadas para empresas y oficinas.
+                        </p>
+
+
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Agenda Personalizada')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+
+                        <img src="img/bolsas.jpg" alt="Bolsa">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Bolsa Ecológica</h3>
+
+                        <p>
+                            Personalizada con serigrafía o DTF.
+                        </p>
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Bolsa Ecológica')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="img/tomatodo.jpg" alt="Tomatodo">
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Tomatodos Personalizados</h3>
+
+                        <p>
+                            Ideales para empresas y todo tipo de evento.
+                        </p>
+
+
+                    </div>
+
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Tomatodos Personalizados')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="img/cuaderno.jpg" alt="Cuaderno">
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Cuadernos Corporativos</h3>
+
+                        <p>
+                            Personalizados con tu marca o diseño exclusivo.
+                        </p>
+
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Cuadernos Corporativos')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="img/lapiceros.jpg" alt="Lapiceros">
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Lapiceros Publicitarios</h3>
+
+                        <p>
+                            Excelente opción para campañas publicitarias.
+                        </p>
+
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Lapiceros Publicitarios')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+
+
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="img/gorro.jpg" alt="Gorros">
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Gorros Personalizados</h3>
+
+                        <p>
+                            Bordados o impresos según tus necesidades.
+                        </p>
+
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Gorros Personalizados')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="img/caja.jpg" alt="Caja">
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Cajas Personalizadas</h3>
+
+                        <p>
+                            Packaging ideal para tu emprendimiento.
+                        </p>
+
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Cajas Personalizadas')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card-producto">
+
+                    <div class="imagen-producto">
+                        <img src="img/banner.jpg" alt="Banner">
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h3>Banners Publicitarios</h3>
+
+                        <p>
+                            Impresión en alta resolución para publicidad.
+                        </p>
+
+                    </div>
+                    <div class="botones-card">
+
+                        <a href="contacto.html" class="btn-card">
+                            Solicitar
+                        </a>
+
+                        <button class="btn-favorito" onclick="agregarFavorito('Banners Publicitarios')">
+
+                            🤍 Favorito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="tabla-precios">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>Referencia</span>
+
+                <h2>Precios Referenciales</h2>
+
+            </div>
+
+            <table>
+
+                <tr>
+
+                    <th>Producto</th>
+
+                    <th>Desde</th>
+
+                    <th>Tiempo de entrega</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>Tazas Personalizadas</td>
+
+                    <td>S/ 25.00</td>
+
+                    <td>2 días</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Polos DTF</td>
+
+                    <td>S/ 35.00</td>
+
+                    <td>3 días</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Stickers</td>
+
+                    <td>S/ 15.00</td>
+
+                    <td>1 día</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Llaveros</td>
+
+                    <td>S/ 18.00</td>
+
+                    <td>2 días</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Agendas</td>
+
+                    <td>S/ 30.00</td>
+
+                    <td>4 días</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Bolsas Ecológicas</td>
+
+                    <td>S/ 20.00</td>
+
+                    <td>3 días</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <section class="proceso">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>¿Cómo Trabajamos?</span>
+
+                <h2>Proceso de Compra</h2>
+
+            </div>
+
+            <div class="contenedor-servicios">
+
+                <div class="servicio">
+
+                    <i class="fas fa-comments"></i>
+
+                    <h3>1. Consulta</h3>
+
+                    <p>
+                        Cuéntanos qué producto necesitas y la cantidad.
+                    </p>
+
+                </div>
+
+                <div class="servicio">
+
+                    <i class="fas fa-pencil-ruler"></i>
+
+                    <h3>2. Diseño</h3>
+
+                    <p>
+                        Elaboramos una propuesta personalizada para ti.
+                    </p>
+
+                </div>
+
+                <div class="servicio">
+
+                    <i class="fas fa-print"></i>
+
+                    <h3>3. Producción</h3>
+
+                    <p>
+                        Fabricamos tu pedido con materiales de calidad.
+                    </p>
+
+                </div>
+
+                <div class="servicio">
+
+                    <i class="fas fa-truck-fast"></i>
+
+                    <h3>4. Entrega</h3>
+
+                    <p>
+                        Recibe tu pedido en el tiempo acordado.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cta">
+
+        <div class="contenedor">
+
+            <div class="cta-contenido">
+
+                <h2>
+
+                    ¿No encontraste el producto que buscas?
+
+                </h2>
+
+                <p>
+
+                    Contáctanos y elaboraremos una propuesta totalmente personalizada para tu empresa o emprendimiento.
+
+                </p>
+
+                <a href="contacto.html" class="btn-principal">
+
+                    Solicitar Cotización
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="contenedor">
+
+            <div class="footer-grid">
+
+                <div class="footer-col">
+
+                    <img src="img/logo.png" alt="Vonvi Studio" class="logo-footer">
+
+                    <p>
+                        En Vonvi Studio Perú transformamos ideas en productos personalizados de alta calidad para
+                        empresas, emprendimientos y ocasiones especiales.
+                    </p>
+
+                    <div class="redes">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3>Enlaces</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Inicio</a></li>
+
+                        <li><a href="nosotros.html">Nosotros</a></li>
+
+                        <li><a href="productos.html">Productos</a></li>
+
+                        <li><a href="servicios.html">Servicios</a></li>
+
+                        <li><a href="videos.html">Videos</a></li>
+
+                        <li><a href="contacto.html">Contacto</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3>Nuestros Servicios</h3>
+
+                    <ul>
+
+                        <li>Merchandising</li>
+
+                        <li>Papelería Personalizada</li>
+
+                        <li>Impresión Digital</li>
+
+                        <li>Diseño Gráfico</li>
+
+                        <li>Publicidad</li>
+
+                        <li>Regalos Corporativos</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3>Contáctanos</h3>
+
+                    <p><i class="fas fa-location-dot"></i> Chorrillos ref. Parque Belen- Lima, Perú</p>
+
+                    <p><i class="fas fa-phone"></i> +51 907 100 820</p>
+
+                    <p><i class="fas fa-envelope"></i> vonvistudioperu@gmail.com</p>
+
+                    <p><i class="fas fa-clock"></i> Lun - Sáb | 8:00 am - 6:00 pm</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="anio"></span> Vonvi Studio Perú | Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <a href="https://wa.me/51907100820" class="whatsapp" target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <div id="btnTop">
+
+        <i class="fas fa-chevron-up"></i>
+
+    </div>
+
+
+    <div id="panelFavoritos">
+
+        <div class="headerFavoritos">
+
+            <h3>🤍 Mis Favoritos</h3>
+
+            <button onclick="cerrarFavoritos()">
+                ✖
+            </button>
+
+        </div>
+
+        <div id="contenidoFavoritos">
+
+            <ul id="listaFavoritos">
+
+            </ul>
+
+        </div>
+
+    </div>
+    <div id="mensajeFavorito">
+        🤍 Producto agregado a tus favoritos
+    </div>
+
+</body>
+
+</html>

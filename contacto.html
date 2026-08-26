@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | Vonvi Studio Perú</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="JAVASCRIPT/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="contenedor">
+
+            <div class="logo">
+
+                <a href="index.html">
+
+                    <img src="img/logo.png" alt="Vonvi Studio">
+
+                </a>
+
+            </div>
+
+            <nav id="menu">
+
+                <ul>
+
+                    <li><a href="index.html">Inicio</a></li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                    <li><a href="productos.html" >Productos</a></li>
+
+                    <li><a href="servicios.html">Servicios</a></li>
+
+                    <li><a href="videos.html">Videos</a></li>
+
+                    <li><a href="contacto.html" class="activo">Contacto</a></li>
+
+                </ul>
+
+            </nav>
+            <a href="#" class="btn-header btn-favoritos" onclick="toggleFavoritos(); return false;">
+
+                <span class="icono-favorito">🤍</span>
+
+                <span class="texto-favorito">Mis Favoritos</span>
+
+            </a>
+            <a href="contacto.html" class="btn-header">
+
+                Cotiza Aquí
+
+            </a>
+
+            <div class="menu-movil" onclick="abrirMenu()">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <section class="hero-pagina">
+
+        <div class="contenedor">
+
+            <h1>Contáctanos</h1>
+
+            <p>
+                Estamos listos para ayudarte. Solicita tu cotización o escríbenos para resolver cualquier consulta.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="contacto">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>Contacto</span>
+
+                <h2>Solicita tu Cotización</h2>
+
+                <p>
+                    Completa el siguiente formulario y nos comunicaremos contigo lo antes posible.
+                </p>
+
+            </div>
+
+            <div class="contenedor-contacto">
+
+                <div class="info-contacto">
+
+                    <h3>Información de Contacto</h3>
+
+                    <p>
+
+                        <i class="fas fa-location-dot"></i>
+
+                        Chorrillos, Lima - Perú
+
+                    </p>
+
+                    <p>
+
+                        <i class="fas fa-phone"></i>
+
+                        +51 907 100 820
+
+                    </p>
+
+                    <p>
+
+                        <i class="fas fa-envelope"></i>
+
+                        vonvistudioperu@gmail.com
+
+                    </p>
+
+                    <p>
+
+                        <i class="fas fa-clock"></i>
+
+                        Lunes a Viernes<br>
+                        8:00 a.m. - 6:30 p.m.
+
+                    </p>
+                    <p>
+
+                        <i class="fas fa-clock"></i>
+
+                        Sabados<br>
+                        7:00 a.m. - 12:00 p.m.
+
+                    </p>
+
+                    <iframe src="https://www.google.com/maps?q=Chorrillos,Lima&output=embed" loading="lazy">
+                    </iframe>
+
+                </div>
+
+                <div class="formulario">
+
+                    <form id="formulario">
+
+                        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+
+                        <input type="email" id="correo" placeholder="Correo Electrónico" required>
+
+                        <input type="tel" id="telefono" placeholder="Celular" required>
+
+                        <select id="producto" onchange="cambiarProducto()">
+
+                            <option>Seleccione un producto</option>
+
+                            <option>Tazas Personalizadas</option>
+
+                            <option>Polos DTF</option>
+
+                            <option>Stickers</option>
+
+                            <option>Llaveros</option>
+
+                            <option>Agendas</option>
+
+                            <option>Tomatodos</option>
+
+                            <option>Banners</option>
+
+                            <option>Otro</option>
+
+                        </select>
+
+                        <textarea id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+
+                        <label>¿Cómo prefieres que te contactemos?</label>
+
+                        <label>
+                            <input type="radio" name="contacto" value="Correo" required>
+                            Correo electrónico
+                        </label>
+
+                        <label>
+                            <input type="radio" name="contacto" value="WhatsApp">
+                            WhatsApp
+                        </label>
+
+                        <label>
+                            <input type="radio" name="contacto" value="Llamada">
+                            Llamada telefónica
+                        </label>
+
+                        <p>
+
+                        </p>
+
+                        <!-- Casillas de verificación -->
+                        <label>
+                            <input type="checkbox" name="terminos" required>
+                            Acepto los términos y condiciones.
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="promociones">
+                            Deseo recibir promociones y novedades.
+                        </label>
+
+                        <button type="button" onclick="enviarFormulario()">
+                            Enviar Solicitud
+                        </button>
+                        <p id="mensajeExito" style="display:none; color:green; margin-top:15px;">
+                            ✅ Tu solicitud ha sido registrada correctamente.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="faq">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+
+                <span>Preguntas Frecuentes</span>
+
+                <h2>Información útil</h2>
+
+                <p>
+                    Resolvemos las dudas más comunes de nuestros clientes.
+                </p>
+
+            </div>
+
+            <div class="acordeon">
+
+                <div class="item">
+
+                    <button class="pregunta">
+
+                        <span>¿Realizan envíos?</span>
+
+                        <i class="fas fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="respuesta">
+
+                        <p>
+                            Sí. Realizamos entregas en Lima Metropolitana y envíos a nivel nacional mediante agencias de
+                            transporte confiables.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <button class="pregunta">
+
+                        <span>¿Cuál es el tiempo de producción?</span>
+
+                        <i class="fas fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="respuesta">
+
+                        <p>
+                            El tiempo de producción depende del tipo de producto y la cantidad solicitada. Generalmente
+                            es de 2 a 5 días hábiles.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <button class="pregunta">
+
+                        <span>¿Los diseños son personalizados?</span>
+
+                        <i class="fas fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="respuesta">
+
+                        <p>
+                            Sí. Todos nuestros productos pueden personalizarse con el nombre, logotipo, colores o diseño
+                            que el cliente solicite.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <button class="pregunta">
+
+                        <span>¿Qué métodos de pago aceptan?</span>
+
+                        <i class="fas fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="respuesta">
+
+                        <p>
+                            Aceptamos Yape, Plin, transferencias bancarias, depósito y efectivo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <button class="pregunta">
+
+                        <span>¿Puedo solicitar una cotización sin compromiso?</span>
+
+                        <i class="fas fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="respuesta">
+
+                        <p>
+                            Claro. Elaboramos cotizaciones totalmente gratuitas de acuerdo con las especificaciones de
+                            tu pedido.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                    <button class="pregunta">
+
+                        <span>¿Realizan trabajos para empresas?</span>
+
+                        <i class="fas fa-chevron-down"></i>
+
+                    </button>
+
+                    <div class="respuesta">
+
+                        <p>
+                            Sí. Atendemos empresas, instituciones educativas, emprendimientos y clientes particulares
+                            con pedidos al por menor y al por mayor.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="contenedor">
+
+            <div class="footer-grid">
+
+                <div class="footer-col">
+
+                    <img src="img/logo.png" alt="Vonvi Studio" class="logo-footer">
+
+                    <p>
+                        En Vonvi Studio Perú transformamos ideas en productos personalizados de alta calidad para
+                        empresas, emprendimientos y ocasiones especiales.
+                    </p>
+
+                    <div class="redes">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3>Enlaces</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Inicio</a></li>
+
+                        <li><a href="nosotros.html">Nosotros</a></li>
+
+                        <li><a href="productos.html">Productos</a></li>
+
+                        <li><a href="servicios.html">Servicios</a></li>
+
+                        <li><a href="videos.html">Videos</a></li>
+
+                        <li><a href="contacto.html">Contacto</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3>Nuestros Servicios</h3>
+
+                    <ul>
+
+                        <li>Merchandising</li>
+
+                        <li>Papelería Personalizada</li>
+
+                        <li>Impresión Digital</li>
+
+                        <li>Diseño Gráfico</li>
+
+                        <li>Publicidad</li>
+
+                        <li>Regalos Corporativos</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3>Contáctanos</h3>
+
+                    <p><i class="fas fa-location-dot"></i> Chorrillos ref. Parque Belen- Lima, Perú</p>
+
+                    <p><i class="fas fa-phone"></i> +51 907 100 820</p>
+
+                    <p><i class="fas fa-envelope"></i> vonvistudioperu@gmail.com</p>
+
+                    <p><i class="fas fa-clock"></i> Lun - Sáb | 8:00 am - 6:00 pm</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="anio"></span> Vonvi Studio Perú | Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <a href="https://wa.me/51907100820" class="whatsapp" target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <div id="btnTop">
+
+        <i class="fas fa-chevron-up"></i>
+
+    </div>
+
+   <div id="panelFavoritos">
+
+    <div class="headerFavoritos">
+
+        <h3>🤍  Mis Favoritos</h3>
+
+        <button onclick="cerrarFavoritos()">
+            ✖
+        </button>
+
+    </div>
+
+    <div id="contenidoFavoritos">
+
+            <ul id="listaFavoritos">
+
+        </ul>
+
+    </div>
+
+</div>
+<div id="mensajeFavorito">
+    🤍 Producto agregado a tus favoritos
+</div>
+
+</body>
+
+</html>
